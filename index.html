@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Hello this is my first contribution:Dwijottam -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="logo.png" sizes="96x96" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+    <script id="MainScript">
+      // Your web app's Firebase configuration
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyD-n4i_GMvhUcVHR-VZhlJ1dzcb3Ahrbuc",
+        authDomain: "sanskrit-group-5.firebaseapp.com",
+        projectId: "sanskrit-group-5",
+        storageBucket: "sanskrit-group-5.appspot.com",
+        messagingSenderId: "106625208418",
+        appId: "1:106625208418:web:bfa966e975cdb391b3813b",
+        measurementId: "G-1S3VVLDQL5",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="shortcut icon" href="Icon/textstorm.png" type="image/x-icon" />
+    <title>Sanskrit Quiz | Play</title>
+  </head>
+  <style>
+    .loader {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <div class="loader" id="loader">
+      <div></div>
+    </div>
+    <div class="wrapper" id="wrapper">
+      <section class="form signup">
+        <div class="header">
+          <header>Sanskrit Quiz</header>
+          <p>A Sanskrit Quiz by DJ DK's Webware</p>
+        </div>
+        <form action="#" autocomplete="off">
+          <div class="error-text" id="error"></div>
+          <div class="field input">
+            <label>Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="field input">
+            <label>Roll No</label>
+            <input
+              type="text"
+              name="roll"
+              id="roll"
+              placeholder="Enter your Roll No"
+              required
+            />
+          </div>
+          <!-- <div class="field image">
+            <label>Select Image</label>
+            <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
+          </div> -->
+          <div class="field button">
+            <input
+              type="submit"
+              name="submit"
+              id="button"
+              value="Continue with Quiz"
+            />
+          </div>
+        </form>
+        <div class="credits">
+          Developed by
+          <b>
+            <u>
+              <a
+                id="dev_link"
+                href="https://dj-dk.github.io/DJ-DK-Portfolio/"
+                target="_blank"
+              >
+                <div class="developer">Dwijottam Dutta & Dharmesh Kumar</div>
+              </a>
+            </u>
+          </b>
+        </div>
+      </section>
+    </div>
+    <script></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
