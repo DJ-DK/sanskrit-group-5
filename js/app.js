@@ -10,7 +10,7 @@ const time_line = document.querySelector( "header .time_line" );
 const timeText = document.querySelector( ".timer .time_left_txt" );
 const timeCount = document.querySelector( ".timer .timer_sec" );
 let database = firebase.database();
-var bgSound = new Audio('eminem.mp3');
+var bgSound = new Audio('bg2.mp3');
 
 let UserNameVerification = localStorage.getItem( "User_Name" );
 let User__Verification = localStorage.getItem( "verify" );
@@ -41,13 +41,13 @@ if ( !( ( User__Verification == null ) || ( User__Verification == "" ) ) ) {
             } );
 
         } else {
-            // alert( "Please register your name..." );
-            // window.location.replace( "index.html" );
+            alert( "Please register your name..." );
+            window.location.replace( "index.html" );
         }
     } );
 }
 if ( User__Verification == null || User__Verification == "" ) {
-    alert( "Please register your name...!!!!" );
+    alert( "Please register your name..." );
     window.location.replace( "index.html" );
 }
 

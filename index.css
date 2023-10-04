@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 
 * {
   margin: 0;
@@ -11,17 +11,16 @@
 }
 
 body {
-  background-image: url("./img/bg.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-color: #ce6565;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: #f7f7f7; */
+  background-image: url("./img/dolphin.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   padding: 0 10px;
 }
 
@@ -76,34 +75,25 @@ body {
   justify-content: center;
 }
 
-.form .header{
-  width: 90%;
-}
-
 .form .header header {
   width: 100%;
   text-align: center;
   font-size: 25px;
-  font-weight: 800;
-  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  padding-bottom: 3px;
 }
 
 .form .header p {
   width: 100;
   color: #0A1D37;
   font-size: 15px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #0A1D37;
-  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0A1D37;
 }
 
 .form form {
-  margin-top: 20px;
+  margin: 20px 0;
   width: 90%;
-}
-
-b {
-  color: #333;
 }
 
 .form form #error {
@@ -149,7 +139,7 @@ b {
   /* background: rgba( 255, 255, 255, 0.10 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px ); */
-  border: 1px solid rgb(51,51,51);
+  border: 1px solid rgb(255, 0, 0);
 }
 
 .form form .field input {
@@ -163,16 +153,16 @@ backdrop-filter: blur( 4px ); */
 .form form .button input {
   height: 45px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 17px;
   background: rgb(51, 51, 51);
   border-radius: 5px;
-  margin-top: 10px;
-  transition: all 0.2s ease 0s;
+  margin-top: 13px;
+  transition: .2s;
 }
 
 .form form .button input:hover{
-  background: #1e1e1e;
+  background: #ff0000;
   transform: scale(1.05);
 }
 
@@ -214,15 +204,15 @@ backdrop-filter: blur( 4px ); */
 }
 
 #dev_link {
-  color: #333;
+  color: #696969;
   font-weight: 700;
 }
 
 .developer{
-  transition: transform .2s;
+  transition: transform .12s;
 }
 
 .developer:hover {
-  color: #721c24;
-  transform: scale(1.0);
+  color: rgb(255, 255, 255);
+  transform: scale(1.2);
 }

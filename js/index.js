@@ -13,7 +13,7 @@ form.onsubmit = (e)=> {
     let name_val_first = name_name.value;
     let name_val = name_val_first.trim();
     let roll_val = roll.value;
-    if ( roll_val > 0 && roll_val < 45) {
+    if (roll_val > 0 && roll_val < 45) {
         if ( !( ( name_val.includes( "." ) ) || name_val.includes( "#" ) ) || name_val.includes( "$" ) || name_val.includes( "(" ) || name_val.includes( ")" ) || name_val.includes( "[" ) || name_val.includes( "]" ) ) {
             //Checking password is same from others or not
             let database_ref = firebase.database().ref(); //different because ref added means refernce
@@ -36,7 +36,7 @@ form.onsubmit = (e)=> {
                         const database = firebase.database();
                         let data = {
                             User: name_val,
-                            roll: roll_val,
+                            Roll: roll_val,
                             Played: "No"
                         };
                         var ref = database.ref( "Users_Data/" + name_val );
@@ -82,7 +82,7 @@ form.onsubmit = (e)=> {
         }
     } else {
         document.getElementById( "error" ).style.display = "block";
-        error.innerHTML = "Please type a valid roll no.";
+        error.innerHTML = "Please type a valid Sanskrit Roll no.";
         document.getElementById( "loader" ).style.display = "none";
         document.getElementById( "wrapper" ).style.display = "block";
         setTimeout( () => {
